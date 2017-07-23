@@ -1,0 +1,23 @@
+feature (function)
+- interface between mouse pointer & blocks. 
+	( conversion of screen coordinates to world coordinates )
+
+- ability to drag blocks on a plane parallel to screen. 
+	( ability to select blocks with click, entering selected state, and releasing click results in dropping in normal game gravity, unselecting. )
+	( dragging plane automatically defined perpendicular to camera, initially offering no depth in MVP. Only build 2D these 3D objects for now. ) 
+
+- ability to build block structures easily
+	( blocks snap with some ease within a certain vicinity range of each other. )
+
+- ability to name blocks easily
+	( a. e.g. via selecting with a click, then typing, then confirming with enter key. )
+	( b. with a graphical "popup" user interface, using modern unity GUI system, including a visible text region with blinking cursor. )
+	( some kind of texture mapping solution seems necessary. ) 
+
+- ability to save and load changes to world
+	( serialization of game objects from scene and restoration, including all properties such as customized text displaying )
+
+- ability to exert limited control over aesthetic look of blocks (? ill-defined ?) 
+	(? undefined ?)
+
+- support PC
