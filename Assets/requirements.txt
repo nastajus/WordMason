@@ -13,6 +13,7 @@ feature (function)
 	( a. e.g. via selecting with a click, then typing, then confirming with enter key. )
 	( b. with a graphical "popup" user interface, using modern unity GUI system, including a visible text region with blinking cursor. )
 	( some kind of texture mapping solution seems necessary. ) 
+	( for the desired aesthetic to be meaningful, the text must be imposed on the bricks directly, and not floating with UI elements cheating. )
 
 - ability to save and load changes to world
 	( serialization of game objects from scene and restoration, including all properties such as customized text displaying )

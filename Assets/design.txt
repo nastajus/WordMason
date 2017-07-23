@@ -1,0 +1,52 @@
+project design:
+
+draft 1:
+--------
+
+class structure
+---------------
+
+- click screen class
+- utils class (static)
+	- conversion coordinate method (static)
+- ui class
+- text-edit class
+- serialization ... hold on wait, that modifies existing class properties, significantly ... stop.
+
+
+
+
+draft 2:
+--------
+
+does it make sense to apply MVC to Unity? 
+------------------------------------------
+- Model is ... bricks, with associated labels, possibly tracked or untracked. and includes their positions.
+- View ... anything that controls where a brick goes. snapping. detection of nearby bricks.  instantiation of new bricks, somehow... 
+- Controller ... an event system... which looks for specific mouse clicks... or otherwise ... and triggers associated methods bound... 
+
+- seems reasonably doable.  maybe consult the internet for more clarity. on several points:
+
+actionables:
+------------
+- look open-ended for any web page articles that describe how people typically apply MVC to a game or a Unity-specific game. Expect here probably is lots of such material. get broad ideas.
+- (#1 priority) review event binding in Mono with Unity. 
+	- how do events get binded? in C#?
+- (#2 priority) review serialization, it'll affect my project structure much.
+	- build small serialization prototype in isolation, i recall difficulties due to complexities. i think each data structure needs to be carefully made to be serializable, and i'm recalling Lists aren't, by default.
+- review new UI
+	- build small new UI with: visual border, blinking textbox, dynamic updating obviously while typing. Choose look too. can't just be floating text in space without even just a solid background for it to hit, if only in the vicinity near the block, until such time it is completed.
+- review texturization of cubes
+	- how can i embed text? aliased? Choose what rest of cube will look like
+	- relearn blender creation of cube, export and import to unity, and any ramifications such as loosing color, or different axes, such as file type .obj or .fbx, 
+	- or, build cube from scratch from vertices. 
+	-------
+	- or i can just put "text mesh" as a child on an object. huh. okay. investigate this.
+
+
+
+
+draft 3: 
+--------
+
+stop. too many actionables now. all 4 mini projects can be build in here as a kind of "playground", but none of the potential design should take any solidifcation form (as in don't write classes yet) until i've played with the above, especially the event system & serialization. the other 2 i can imagine the code structure, based on experience already. 
